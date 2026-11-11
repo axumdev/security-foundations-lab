@@ -54,6 +54,8 @@ def render():
         if i+1<len(modules):body+='<a href="'+modules[i+1]['slug']+'.html">Next module →</a>'
         body+='</div>'
         (OUT/(m['slug']+'.html')).write_text(page(m['title'],body),encoding='utf-8')
+    from learner_preview import render_preview
+    render_preview(OUT,chapters)
     site=ROOT/'work'/'site'/'dist';site.mkdir(parents=True,exist_ok=True)
     import shutil
     for f in OUT.iterdir():

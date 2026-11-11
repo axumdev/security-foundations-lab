@@ -54,7 +54,7 @@ for f in OUT.iterdir():
     if f.is_file():shutil.copy2(f,site/f.name)
 src=OUT.parent/'security-foundations-authoring-source.zip'
 with zipfile.ZipFile(src,'w',zipfile.ZIP_DEFLATED) as z:
-    for name in ('course.py','support_pages.py','extensions.py','extension_finish.py','build_case.py','render_course.py','package_course.py','validate_course.py'):
+    for name in ('course.py','support_pages.py','extensions.py','extension_finish.py','build_case.py','learner_preview.py','render_course.py','package_course.py','validate_course.py'):
         z.write(ROOT/'work'/name,'work/'+name)
     z.writestr('README.txt','Extract into an empty directory. Requires Python 3.10+ standard library. Run python work/package_course.py to regenerate outputs/security-foundations and work/site/dist. Edit course.py for lessons, support_pages.py for handbook/mentor/templates, render_course.py for layout. No deployment credentials or hosting identifiers are included. The generated static HTML is also editable directly.\n')
 print(archive)
