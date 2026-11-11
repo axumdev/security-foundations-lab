@@ -13,7 +13,9 @@ def nav(current):
     for m in modules:s+='<a href="'+m['slug']+'.html">'+m['title']+'</a>'
     return s
 def page(title,body,current=None):
-    return '<!doctype html><html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><meta name="description" content="A six-month hands-on cybersecurity course: operating systems, networks, identity, detection, response, and cloud."><title>'+html.escape(title)+' · Security Foundations Lab</title><link rel="stylesheet" href="style.css"></head><body><header class="top"><a class="brand" href="index.html">SECURITY FOUNDATIONS / LAB</a><small>Build it. Explain it. Test it. Recover it.</small></header><div class="layout"><nav class="sidebar" aria-label="Course navigation">'+nav(current)+'</nav><main>'+body+'<footer class="footer">Course edition 1.1 · September 2026 · Instructor-led lab material. Commands require the named guest and prerequisites. Documentation checked during authoring; VM execution remains a learner/mentor validation step.</footer></main></div></body></html>'
+    from learner_preview import page as layout
+    return layout(title,'<p><a href="index.html#lessons">← Course outline</a></p>'+body)
+
 def render():
     chapters.sort(key=lambda c:c['n'])
     (OUT/'style.css').write_text(STYLE,encoding='utf-8')

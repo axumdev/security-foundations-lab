@@ -4,9 +4,13 @@ A free, downloadable cybersecurity lab course for aspiring IT and security profe
 
 ## Start here
 
+![Course homepage showing the first lesson and the Hyper-V and VirtualBox setup choices](docs/course-preview.png)
+
 1. **[Download the course ZIP](https://github.com/axumdev/security-foundations-lab/releases/latest/download/security-foundations-offline.zip)**. Alternatively, select the [course ZIP in this repository](security-foundations-offline.zip) and choose **Download raw file**.
 2. Right-click the downloaded ZIP and select **Extract All**. Open **index.html** inside the extracted folder.
 3. Use **Choose your setup** on the home page. Hyper-V is the documented course path. The VirtualBox walkthrough covers Weeks 1–3 and is awaiting an end-to-end pilot. If you already downloaded the entire repository, open **course/index.html** instead.
+
+**Learning solo?** Use the handbook’s self-review checklist. Week 23 includes a personal Azure subscription path and a no-cloud alternative.
 
 **Teaching a class?** Open **Mentor guide** from the course home page for review questions, evidence checks, and guidance on when students are ready to advance.
 

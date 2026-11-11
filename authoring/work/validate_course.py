@@ -6,7 +6,15 @@ import urllib.request,json,re,ast
 from course import chapters
 from extension_finish import modules
 
-root=Path(__file__).resolve().parent.parent/'outputs'/'security-foundations'
+import argparse
+cli=argparse.ArgumentParser()
+cli.add_argument('--root',type=Path,default=Path(__file__).resolve().parents[2]/'course')
+cli.add_argument('--external',action='store_true')
+args=cli.parse_args()
+root=args.root
+required={'index.html','lab-handbook.html','mentor.html','templates.html','glossary.html','virtualbox.html','extensions.html'}|{f'week-{i:02}.html' for i in range(1,27)}|{m['slug']+'.html' for m in modules}
+missing=required-{p.name for p in root.glob('*.html')}
+if missing:raise SystemExit(f'Incomplete course at {root}: missing {len(missing)} required pages')
 class Parser(HTMLParser):
     def __init__(self):super().__init__(convert_charrefs=True);self.links=[];self.h1=0;self.lang=None
     def handle_starttag(self,tag,attrs):
@@ -38,7 +46,7 @@ def check(url):
         req=urllib.request.Request(url,headers={'User-Agent':'Mozilla/5.0'},method='HEAD')
         with urllib.request.urlopen(req,timeout=15) as r:return {'url':url,'status':r.status,'final':r.url}
     except Exception as e:return {'url':url,'error':str(e)}
-if __name__=='__main__':
+if __name__=='__main__' and args.external:
     with ThreadPoolExecutor(max_workers=8) as pool:results=list(pool.map(check,sorted(urls)))
-    (root.parent.parent/'work'/'reference-check.json').write_text(json.dumps(results,indent=2),encoding='utf-8')
+    (Path.cwd()/'reference-check.json').write_text(json.dumps(results,indent=2),encoding='utf-8')
     print(json.dumps([r for r in results if 'error' in r],indent=2))

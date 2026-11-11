@@ -2,9 +2,7 @@
 
 This policy covers the course instructions, authoring scripts, and downloadable release ZIP. Examples include a real credential in an archive, a guest command that could erase host data, or a network configuration that exposes a deliberately vulnerable VM.
 
-**During private review:** contact the maintainer privately through the channel used to arrange your review. If you have no private contact, open an issue asking only for a secure contact method. Do not include vulnerability details in the issue.
-
-**After public launch:** if the repository's Security tab offers **Report a vulnerability**, use it to send a private report. If that option is unavailable, ask for a secure contact method as described above.
+Use [Report a vulnerability](https://github.com/axumdev/security-foundations-lab/security/advisories/new) to contact the maintainer privately. If the form is unavailable, open an issue asking only for a secure contact method. Never post sensitive details in an issue.
 
 Include the release tag, filename or lesson and step, the potential impact, and a sanitized description of what you observed. Do not include passwords, tokens, personal data, or sensitive logs. You do not need to reproduce a destructive command to report it.
 

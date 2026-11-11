@@ -1,36 +1,12 @@
-SECURITY FOUNDATIONS LAB — Edition 1.1 (September 2026)
+SECURITY FOUNDATIONS LAB | Public pilot v0.3
 
-START: Open index.html in a browser. No installation or server is required
-to read the course. Keep all HTML files and style.css together.
+Extract the complete ZIP. Open index.html in your browser and choose your setup.
+Read the lab handbook and begin Week 1. Keep notes outside this folder.
 
-26 core weeks plus six security-platform extensions • 6–12 hours/week
-38 HTML pages, including Elastic/ELK, Splunk, and Security Onion labs.
-Core: 156 planned hours. Extensions: 36 additional hours.
-At 9 hours/week, use the 26-week expanded schedule in extensions.html.
-At 6 hours/week, the expanded course takes 32 calendar weeks.
-case-m01.zip contains synthetic events, PCAP, hashes, and an answer key.
+The 39 HTML pages work offline. Plan six hours per core week for 26 weeks.
+Optional extensions add about 36 hours. Downloads and cloud exercises need internet.
+Learning solo? Use the handbook's self-review checklist. Teaching? Open mentor.html.
+The case archive includes an answer key. For assessment, give students only the evidence files.
 
-Reading/navigation work offline. External documentation links, software
-downloads, and cloud exercises need internet. The archive's download link
-returns to this same package; keep course-offline.zip alongside extracted
-files if you want that link to work offline too.
-
-Begin with lab-handbook.html, then week-01.html. Instructor: mentor.html.
-
-Baseline: 16 GB Windows 11 Pro laptop; staged VM power profiles.
-Assumptions to confirm: administrator/BIOS access, weekly mentor review,
-Azure cloud sandbox provided in Week 23. English is confirmed.
-
-Validation: HTML entrypoints and local references checked; all 26 lessons
-have prerequisites, steps, evidence, questions, troubleshooting, and optional
-practice. Official technical references checked during authoring. Selected
-configuration syntax and the log-summary exercise were checked separately.
-No Hyper-V guests, Wazuh deployment, or Azure resources were executed for
-this authoring task. Pilot the course and record actual versions/timings
-before using it with a wider cohort.
-
-REUSE: HTML/CSS can be edited directly and hosted on a static web server.
-An optional authoring source archive accompanies the delivered course.
-No accounts, grades, payment processing, or shared learner state are built in.
-No OS installers or third-party binaries are redistributed.
-A public/open-source content license has not been selected.
+Pilot status: the first Ubuntu guest was piloted. The full course and the VirtualBox
+alternative have not been tested end to end.

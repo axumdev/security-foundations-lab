@@ -1,5 +1,10 @@
 # Changelog
 
+## 0.3 — Public pilot
+
+- Added hardware-neutral and solo-learning guidance, consistent page layouts and corrected navigation.
+- Updated offline startup instructions, validation, and vulnerability reporting.
+
 ## 0.2 — Private review
 
 - Redesigned the offline home page and Week 1 for first-time learners.
