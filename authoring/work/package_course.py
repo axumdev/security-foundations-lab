@@ -3,7 +3,7 @@ import zipfile,shutil
 import build_case
 from render_course import render,OUT,ROOT
 render()
-readme=f"""SECURITY FOUNDATIONS LAB | Public pilot v0.3
+readme=f"""SECURITY FOUNDATIONS LAB | Public pilot v0.4
 
 Extract the complete ZIP. Open index.html in your browser and choose your setup.
 Read the lab handbook and begin Week 1. Keep notes outside this folder.

@@ -1,5 +1,10 @@
 # Changelog
 
+## 0.4 — Easier-to-follow lab instructions
+
+- Broke up procedural paragraphs across the core lessons, optional extensions and handbook.
+- Added field/value layouts for configuration screens, separate checks for expected results, and a shorter portfolio checklist.
+
 ## 0.3 — Public pilot
 
 - Added hardware-neutral and solo-learning guidance, consistent page layouts and corrected navigation.
