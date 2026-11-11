@@ -14,7 +14,7 @@ def page(title, body):
 
 def render_preview(out, chapters):
     chapters=sorted(chapters,key=lambda c:c['n'])
-    home="""<section class="hero"><span class="label">FIELD GUIDE / 26 WEEKS</span><h1>Build your first security lab.</h1><p>Start with one Windows laptop. Build a Linux guest, connect a second machine, and capture a request. Later, use those same systems to investigate an incident.</p><a class="btn" href="week-01.html">Start Week 1: Prepare your laptop →</a></section>
+    home="""<section class="hero"><span class="label">FIELD GUIDE / 26 WEEKS</span><h1>Build a network you can run and secure.</h1><p>Learn systems administration, networking, and security engineering on your own laptop. Install two Linux guests, serve a web page, and trace the request between them. Later, use the same lab to manage identities, test detections, and recover a service.</p><a class="btn" href="week-01.html">Start Week 1: Prepare your laptop →</a></section>
     <h2>Before you begin</h2><div class="grid"><section class="panel"><h3>Your equipment</h3><p>The guide assumes Windows 11 Pro, 16 GB of RAM, and administrator access. Week 1 checks your hardware before you install a VM.</p></section><section class="panel"><h3>Your pace</h3><p>Allow about six hours per core week. Split a lesson across sessions; use the checks at the end to decide when to move on.</p></section></div>
     <p class="hint"><strong>Using the download?</strong> Keep the extracted folder together. Reading works offline. You’ll need internet for installers, updates, and cloud exercises.</p>
     <h2 id="lessons">Find a lesson</h2><p>Work through the weeks in order. Returning learners can open a section below to jump back in.</p>"""

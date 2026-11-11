@@ -1,6 +1,8 @@
 # Security Foundations Lab
 
-A free, downloadable cybersecurity lab course for aspiring IT and security professionals. Build the systems first, then learn to protect them: install Ubuntu, connect two guests on a private network, capture a request, and follow the evidence into a detection tool.
+**Systems administration, networking, and security engineering in one hands-on lab.**
+
+This free, downloadable course is for people starting in IT operations, network support, or cybersecurity. Start with two virtual machines and a question: when one machine requests a web page from the other, what has to work? Configure the service, trace the packets, and use the logs to explain the result.
 
 ## Start here
 
@@ -17,6 +19,13 @@ A free, downloadable cybersecurity lab course for aspiring IT and security profe
 No web server, account, or subscription is needed to read the course. The lessons and synthetic investigation case work offline. OS installers, package updates, and the later cloud exercises require internet access. Cloud resources are separate and may incur charges; use an authorized sandbox.
 
 ## What you'll build
+
+| Skill | What you’ll do | How you’ll know it worked |
+|---|---|---|
+| Systems administration | Install Linux and Windows guests, run services, and manage accounts and permissions. | Show that an authorized user can read a file and an unauthorized user cannot. |
+| Networking | Address a private subnet, configure DNS, and capture HTTP traffic. | Trace a request between two guests and demonstrate that the lab has no route to the internet. |
+| Security engineering | Collect endpoint and network events, write a detection rule, and test it. | Produce an alert from a known event and check a case that should not trigger it. |
+| Operations and recovery | Diagnose an outage, restore a backup, and document the repair. | Repeat the client’s original request or compare the restored file’s hash with the original. |
 
 The 26-week core starts with Windows 11 Pro, Hyper-V, Ubuntu, and a private network. It continues through Windows identity, TLS, Wazuh, endpoint logs, Suricata, incident response, recovery, and an Azure lab. Six optional modules compare Elastic, Splunk, and Security Onion using synthetic evidence. Work only with your own course VMs and authorized cloud resources.
 
