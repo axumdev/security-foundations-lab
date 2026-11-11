@@ -24,7 +24,7 @@ This pilot includes the whole curriculum. The first Ubuntu guest was installed, 
 
 Keep your notes and lab evidence outside the extracted course folder. When a new edition is available, download and extract it into a new folder; your existing VMs and notes can stay in place.
 
-Found an unclear step? [Choose **Ask a lab question** or **Report a correction**](https://github.com/axumdev/security-foundations-lab/issues/new/choose). While this repository is private, the issue tracker is available only to people with repository access. Redact credentials, personal details, and identifiers before posting.
+Found an unclear step? [Choose **Ask a lab question** or **Report a correction**](https://github.com/axumdev/security-foundations-lab/issues/new/choose). For sensitive findings, follow the [security policy](SECURITY.md). Redact credentials, personal details, and identifiers before posting.
 
 ## Maintaining the course
 
