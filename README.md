@@ -43,4 +43,8 @@ Found an unclear step? [Choose **Ask a lab question** or **Report a correction**
 
 The editable Python sources are in **authoring/work/**. See **authoring/README.txt** for build instructions. After editing, run `python work/package_course.py` from **authoring/**. Replace the root **security-foundations-offline.zip** with the generated **outputs/security-foundations-offline.zip**, and extract that ZIP into a fresh **course/** folder for the release. Check links and the affected lab steps, then add an entry to **CHANGELOG.md**.
 
-Access to the curriculum is free of charge. No open-content or open-source license has been selected for this edition. Third-party software is obtained separately under its own terms.
+## Teaching, adapting, and sharing
+
+You may copy, translate, and adapt the original lessons, mentor guide, and practice materials, including for paid classes, under [CC BY 4.0](https://creativecommons.org/licenses/by/4.0/). Credit the source, retain the license notice, and describe any changes. The authoring software and third-party materials are outside this grant. See [LICENSE.txt](LICENSE.txt).
+
+**Credit to copy:** [Security Foundations Lab](https://github.com/axumdev/security-foundations-lab) by axumdev, licensed under [CC BY 4.0](https://creativecommons.org/licenses/by/4.0/). If adapted, add a line such as “Adapted for our class: translated Week 1 and changed the network exercise.”

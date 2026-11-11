@@ -19,7 +19,11 @@ The case archive includes an answer key. For assessment, give students only the 
 
 Pilot status: the first Ubuntu guest was piloted. The full course and the VirtualBox
 alternative have not been tested end to end.
+
+Teaching or adapting the course? See LICENSE.txt for CC BY 4.0 terms
+and a credit line you can copy. Paid classes are permitted.
 """
+(OUT/'LICENSE.txt').write_bytes(build_case.license_text)
 (OUT/'START-HERE.txt').write_text(readme,encoding='utf-8')
 archive=OUT.parent/'security-foundations-offline.zip'
 with zipfile.ZipFile(archive,'w',zipfile.ZIP_DEFLATED) as z:
@@ -34,6 +38,7 @@ for f in OUT.iterdir():
     if f.is_file():shutil.copy2(f,site/f.name)
 src=OUT.parent/'security-foundations-authoring-source.zip'
 with zipfile.ZipFile(src,'w',zipfile.ZIP_DEFLATED) as z:
+    z.writestr('work/LICENSE.txt',build_case.license_text)
     for name in ('course.py','support_pages.py','extensions.py','extension_finish.py','build_case.py','learner_preview.py','render_course.py','package_course.py','validate_course.py'):
         z.write(ROOT/'work'/name,'work/'+name)
     z.writestr('README.txt','Extract into an empty directory. Requires Python 3.10+ standard library. Run python work/package_course.py to regenerate outputs/security-foundations and work/site/dist. Edit course.py for lessons, support_pages.py for handbook/mentor/templates, render_course.py for layout. No deployment credentials or hosting identifiers are included. The generated static HTML is also editable directly.\n')

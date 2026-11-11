@@ -1,0 +1,21 @@
+Security Foundations Lab — course materials license
+Copyright 2026 axumdev
+
+The original lessons, lab instructions, mentor guide, evidence templates,
+and synthetic practice materials (including CASE-M01 and its answer key)
+are licensed under Creative Commons Attribution 4.0 International
+(SPDX: CC-BY-4.0): https://creativecommons.org/licenses/by/4.0/
+Legal terms: https://creativecommons.org/licenses/by/4.0/legalcode
+
+You may share and adapt these materials, including for paid classes.
+Give appropriate credit, retain license and attribution notices, link
+to the license, and indicate any changes. Do not imply endorsement.
+
+Suggested credit:
+Security Foundations Lab by axumdev — https://github.com/axumdev/security-foundations-lab
+Licensed under CC BY 4.0 — https://creativecommons.org/licenses/by/4.0/
+If adapted, add a brief description of what you changed.
+
+This grant covers the original educational content, including that content
+when embedded in source files. It does not license the authoring/build
+software itself or third-party software, documentation, or trademarks.

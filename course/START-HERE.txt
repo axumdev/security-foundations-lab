@@ -14,3 +14,6 @@ The case archive includes an answer key. For assessment, give students only the 
 
 Pilot status: the first Ubuntu guest was piloted. The full course and the VirtualBox
 alternative have not been tested end to end.
+
+Teaching or adapting the course? See LICENSE.txt for CC BY 4.0 terms
+and a credit line you can copy. Paid classes are permitted.
